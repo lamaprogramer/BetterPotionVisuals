@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "betterpotionvisuals",
+  "version": "${version}",
+
+  "name": "Better Potion Visuals",
+  "description": "Backport of then new potions in 1.19.4",
+  "authors": [
+    "Iamaprogrammer"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/betterpotionvisuals/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.iamaprogrammer.betterpotionvisuals.BetterPotionVisuals"
+    ]
+  },
+  "mixins": [
+    "betterpotionvisuals.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "minecraft": "1.19.x",
+  }
+}
